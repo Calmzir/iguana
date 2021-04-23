@@ -1,0 +1,137 @@
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-secundary: #1e1a13;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+p, h1, h2, a {
+    color: var(--color-white);
+}
+
+.header {
+    width: 100%;
+    height: max-content;
+    display: grid;
+}
+
+.header__title-container {
+    height: 73px;
+    width: 100%;
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__title-text {
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.header__image {
+    width: 100%;
+    height: auto;
+}
+
+.desc-section {
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 75px 150px;
+}
+
+.desc-section__description {
+    vertical-align: middle;
+    padding-right: 100px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.desc-section__image {
+    vertical-align: middle;
+    width: 400px;
+    height: auto;
+}
+
+.icons-section {
+    background-color: var(--color-secundary);
+    padding: 75px 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons-section__title-container {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.icons-section__title-text {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.icons-section__icons-container {
+    display: flex;
+    width: 100%;
+}
+
+.icons-section__icons {
+    width: calc(100% / 3);
+    font-weight: 300;
+    text-align: center;
+    font-size: 24px;
+}
+
+.icons-section__icons  i{
+    display: block;
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+
+.gallery-section {
+    background-color: var(--color-black);
+    padding: 75px 150px;
+    display: flex;
+}
+
+.gallery-section__image {
+    width: calc((100% / 3) - 8px);
+    height: auto;
+    margin: 0 8px;
+}
+
+.footer {
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--color-secundary);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer__text {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.footer__anchor {
+    text-decoration: none;
+}
+
+.footer__anchor:hover {
+    color: var(--color-black);
+}
